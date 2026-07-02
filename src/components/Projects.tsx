@@ -14,18 +14,20 @@ export default function Projects() {
     {
       id: 'student-analyzer',
       title: 'Student Performance Analyzer',
-      tagline: 'Python-Powered Academic Performance Data & Prediction System',
-      description: 'An analytical dashboard developed to calculate academic performance metrics, render interactive performance graphs, and estimate future outcomes based on historical record algorithms.',
-      tech: ['Python', 'HTML5', 'CSS3', 'Data Visualization', 'Algorithmic Prediction'],
+      tagline: 'Web-Based Academic Performance Evaluation & Management System',
+      description: 'A web-based system designed to help educators efficiently manage student data and evaluate academic performance. It provides features such as adding, updating, and deleting student records, along with real-time performance analysis using visual charts. It includes user authentication, database handling, and data visualization techniques.',
+      tech: ['Python', 'Flask', 'SQLite', 'HTML5', 'CSS3', 'Matplotlib', 'JavaScript'],
       features: [
-        'Interactive graphical visualization of student performance.',
-        'Performance prediction based on academic records.',
-        'Automatic calculation of total marks, averages, grades, and results.',
-        'Responsive user-friendly interface built with clean HTML and CSS.',
-        'Backend data processing and analysis using Python scripting.'
+        'User Login & Registration system',
+        'Add / Update / Delete student records',
+        'Search and manage student data',
+        'Automatic grade calculation',
+        'Performance analytics dashboard',
+        'Graphical representation using bar charts',
+        'Responsive UI design'
       ],
       githubUrl: 'https://github.com/sirimallachandana4/Student-Performance-Analyser',
-      demoUrl: 'https://github.com/sirimallachandana4/Student-Performance-Analyser',
+      demoUrl: 'https://student-performance-analyser-7wza.onrender.com',
       status: 'Completed',
       year: '2025'
     },
