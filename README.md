@@ -22,7 +22,18 @@ The theme customizer updates the `--accent`, `--accent-dark`, and `--accent-glow
 
 ## 🚀 Featured Projects Showcase
 
-### 1. Student Performance Analyzer 🎓 (Completed)
+### 1. AI Presentation Suite 🪄 (Completed)
+*An elegant, full-stack presentation generation platform leveraging Google Gemini 3.5 to construct, design, and export stunning slide decks instantly.*
+-   **Live Demo**: [ai-ppt-slides-builder.onrender.com](https://ai-ppt-slides-builder.onrender.com)
+-   **Source Code**: [GitHub Repository](https://github.com/sirimallachandana4/AI-PPT-Slides-Builder)
+-   **Technology Stack**: React, TypeScript, Vite, Node.js/Express, Tailwind CSS, Google Gemini 3.5 Flash SDK, Framer Motion, PPTXGenJS
+-   **Key Accomplishments**:
+    -   **Intelligent Slide Blueprinting**: Instantly structures complete presentation flowcharts, layouts, and contextual text contents from a single prompt.
+    -   **9 Premium Curated Themes**: Supports on-the-fly skinning using custom design aesthetics (e.g. Onyx Gold, Midnight Plum, Sapphire Deep, Warm Botanical).
+    -   **Dual Export Architecture**: Includes customized print-media stylesheets for pixel-perfect PDF exports alongside downloadable, fully editable PowerPoint `.pptx` documents.
+    -   **Browser Sandboxing**: Keeps user files completely private using sandboxed local browser database storage.
+
+### 2. Student Performance Analyzer 🎓 (Completed)
 *A secure, web-based analytical system designed for educators to manage academic data and dynamically evaluate student records.*
 -   **Live Demo**: [student-performance-analyser-7wza.onrender.com](https://student-performance-analyser-7wza.onrender.com)
 -   **Source Code**: [GitHub Repository](https://github.com/sirimallachandana4/Student-Performance-Analyser)
@@ -34,7 +45,7 @@ The theme customizer updates the `--accent`, `--accent-dark`, and `--accent-glow
     -   **Dynamic Analytics**: Generated real-time student performance visualizations via custom horizontal and vertical bar charts leveraging **Matplotlib**.
     -   **Responsive Delivery**: Styled a fully adaptive fluid interface optimized for both desktop and mobile devices.
 
-### 2. E-Commerce Shopping Application 🛒 (In Progress — 80%)
+### 3. E-Commerce Shopping Application 🛒 (In Progress — 80%)
 *A robust, multi-module online retail storefront and back-office management portal built on the full MERN architecture.*
 -   **Technology Stack**: MongoDB, Express.js, React.js, Node.js, Mongoose ODM, REST API, Tailwind CSS
 -   **Key Accomplishments**:

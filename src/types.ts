@@ -18,6 +18,7 @@ export interface Project {
   tech: string[];
   features: string[];
   demoUrl?: string;
+  demoNote?: string;
   githubUrl?: string;
   status: 'Completed' | 'In Progress';
   progress?: number; // percentage progress, e.g. 80 for e-commerce

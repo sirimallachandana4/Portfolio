@@ -12,6 +12,24 @@ export default function Projects() {
 
   const projectsData: Project[] = [
     {
+      id: 'ai-presentation-suite',
+      title: 'AI Presentation Suite',
+      tagline: 'An elegant full-stack slide generator powered by Google Gemini 3.5 & React.',
+      description: 'A professional presentation design suite that leverages the Google Gemini 3.5 API to intelligently outline, structure, and theme complete slide decks from any prompt. Designed with robust customization, dual PDF/PowerPoint export systems, and state persistence.',
+      tech: ['React', 'TypeScript', 'Vite', 'Node.js', 'Express', 'Tailwind CSS', 'Google Gemini 3.5', 'Framer Motion', 'PPTXGenJS'],
+      features: [
+        'Intelligent Slide Blueprinting: Instantly generates beautifully structured slide decks from any custom prompt.',
+        '9 Premium Curated Themes: On-the-fly skinning using gorgeous visual themes (e.g., Onyx Gold, Midnight Plum, Sapphire Deep, Warm Botanical).',
+        'Dual Export Systems: Pixel-perfect PDF printing stylesheets alongside editable PowerPoint .pptx generation.',
+        'Browser Sandboxing: Keeps all user files 100% private using secure local browser database persistence.'
+      ],
+      githubUrl: 'https://github.com/sirimallachandana4/AI-PPT-Slides-Builder',
+      demoUrl: 'https://ai-ppt-slides-builder.onrender.com',
+      demoNote: "Hosted on Render's free tier. The server automatically spins down after inactivity, so the initial load may take 60-90 seconds to wake up and load.",
+      status: 'Completed',
+      year: '2026'
+    },
+    {
       id: 'student-analyzer',
       title: 'Student Performance Analyzer',
       tagline: 'Web-Based Academic Performance Evaluation & Management System',
@@ -28,6 +46,7 @@ export default function Projects() {
       ],
       githubUrl: 'https://github.com/sirimallachandana4/Student-Performance-Analyser',
       demoUrl: 'https://student-performance-analyser-7wza.onrender.com',
+      demoNote: "Hosted on Render's free tier. The server automatically spins down after inactivity, so the initial load may take 60-90 seconds to wake up and load.",
       status: 'Completed',
       year: '2025'
     },
@@ -148,36 +167,45 @@ export default function Projects() {
                   </div>
 
                   {/* Links Row */}
-                  <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-white/10">
-                    {project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        referrerPolicy="no-referrer"
-                        className="flex items-center gap-2 px-4 py-2 border border-white/10 hover:border-accent/40 bg-white/5 text-[10px] uppercase tracking-widest text-zinc-300 hover:text-accent font-bold rounded-sm transition-all duration-300"
-                        id={`project_btn_github_${project.id}`}
-                      >
-                        <Github className="w-3.5 h-3.5 text-zinc-400" />
-                        GitHub Repository
-                        <ExternalLink className="w-3 h-3 text-zinc-500" />
-                      </a>
-                    )}
+                  <div className="space-y-3 pt-4 border-t border-white/10">
+                    <div className="flex flex-wrap items-center gap-3">
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          referrerPolicy="no-referrer"
+                          className="flex items-center gap-2 px-4 py-2 border border-white/10 hover:border-accent/40 bg-white/5 text-[10px] uppercase tracking-widest text-zinc-300 hover:text-accent font-bold rounded-sm transition-all duration-300"
+                          id={`project_btn_github_${project.id}`}
+                        >
+                          <Github className="w-3.5 h-3.5 text-zinc-400" />
+                          GitHub Repository
+                          <ExternalLink className="w-3 h-3 text-zinc-500" />
+                        </a>
+                      )}
 
-                    {project.demoUrl && isCompleted ? (
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        referrerPolicy="no-referrer"
-                        className="flex items-center gap-2 px-4 py-2 border border-accent/30 bg-accent/10 hover:bg-accent/20 text-accent text-[10px] uppercase tracking-widest font-bold rounded-sm transition-all duration-300"
-                        id={`project_btn_demo_${project.id}`}
-                      >
-                        View Demo
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                    ) : !isCompleted && (
-                      <div className="flex items-center gap-2 px-4 py-2 border border-dashed border-white/10 bg-[#0A0A0A]/40 text-zinc-500 text-[10px] font-mono font-medium">
-                        <AlertCircle className="w-3.5 h-3.5 text-amber-500/60 animate-pulse" />
-                        Demo available upon launch
+                      {project.demoUrl && isCompleted ? (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          referrerPolicy="no-referrer"
+                          className="flex items-center gap-2 px-4 py-2 border border-accent/30 bg-accent/10 hover:bg-accent/20 text-accent text-[10px] uppercase tracking-widest font-bold rounded-sm transition-all duration-300"
+                          id={`project_btn_demo_${project.id}`}
+                        >
+                          View Demo
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      ) : !isCompleted && (
+                        <div className="flex items-center gap-2 px-4 py-2 border border-dashed border-white/10 bg-[#0A0A0A]/40 text-zinc-500 text-[10px] font-mono font-medium">
+                          <AlertCircle className="w-3.5 h-3.5 text-amber-500/60 animate-pulse" />
+                          Demo available upon launch
+                        </div>
+                      )}
+                    </div>
+
+                    {project.demoNote && isCompleted && (
+                      <div className="flex items-start gap-2 text-[10.5px] text-zinc-400 bg-white/[0.02] border border-white/5 p-2.5 rounded-sm font-mono leading-normal">
+                        <AlertCircle className="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
+                        <span>{project.demoNote}</span>
                       </div>
                     )}
                   </div>
